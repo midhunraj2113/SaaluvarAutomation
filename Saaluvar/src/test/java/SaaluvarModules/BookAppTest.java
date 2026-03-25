@@ -166,11 +166,11 @@ public class BookAppTest extends BaseLoginTest {
 	    dropdownElem.click(); 
 	    Thread.sleep(2000);
 	    
-	 			driver.findElement(By.xpath("//option[text()='Dr.Karnagaran']")).click();
+	 			driver.findElement(By.xpath("//option[text()='check physio']")).click();
 
 	    List<WebElement> options = driver.findElements(By.xpath("//select[@class='patientbooking-patient-input']/option"));
 	    
-		driver.findElement(By.xpath("//option[text()='Juana']")).click();
+		driver.findElement(By.xpath("//option[text()='check physio']")).click();
 
 
 	    if (options.size() > 1) {
@@ -206,7 +206,7 @@ public class BookAppTest extends BaseLoginTest {
 	    String NextMonth = dateField.getText();
 	    driver.findElement(By.xpath("//div[text()='30']")).click();
 	    System.out.println("TC3 - After clicking NextMonth: PASS" );
-	    //driver.findElement(By.xpath("//div[text()='06:00 PM']")).click();
+	    driver.findElement(By.xpath("//div[text()='06:50 PM']")).click();
 	            
 	
 	    }
